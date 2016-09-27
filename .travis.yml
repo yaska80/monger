@@ -1,12 +1,11 @@
 language: clojure
 sudo: required
 dist: trusty
-lein: lein2
 before_script:
   - ./bin/ci/install_mongodb.sh  
   - mongod --version
   - ./bin/ci/before_script.sh
-script: lein2 do clean, javac, test
+script: lein do clean, javac, test
 jdk:
   - openjdk7
   - oraclejdk7
