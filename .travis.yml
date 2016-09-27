@@ -14,4 +14,4 @@ services:
 branches:
   only:
     - master
-    - 3.0.x-stable
+    - async-3.1.0
